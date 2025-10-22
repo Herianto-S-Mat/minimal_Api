@@ -11,36 +11,34 @@ def _load_restaurants():
     with open(data_file_path, 'r') as f:
         return json.load(f)
 
-def get_all_restaurants(categories=[]):
+def get_all_restaurants(category=None, page=1, per_page=10):
     restaurants = _load_restaurants()
 
-    for r in restaurants:
-        r['url'] = f'/api/restaurants/{r["id"]}'
+    if category:
+        filtered_restaurants = []
+        for restaurant in restaurants:
+            if 'categories' in restaurant and isinstance(restaurant['categories'], list):
+                if any(cat.lower() == category.lower() for cat in restaurant['categories']):
+                    filtered_restaurants.append(restaurant)
+            restaurants = filtered_restaurants
 
-    if not categories:
-        return restaurants
+    for restaurant in restaurants:
+        if 'id' in restaurant:
+            restaurant['url'] = f'/api/restaurants/{restaurant["id"]}'
 
-    lower_cats = [cat.lower() for cat in categories]
-    filtered_restaurants = []
+    # Apply pagination
+    total_items = len(restaurants)
+    start_index = (page - 1) * per_page
+    end_index = start_index + per_page
+    paginated_restaurants = restaurants[start_index:end_index]
 
-    for r in restaurants:
-        # pastikan ada 'categories' dan bertipe list
-        if "categories" not in r or not isinstance(r["categories"], list):
-            continue
-
-        # ubah ke lowercase untuk perbandingan
-        rest_cats_lower = [c.lower() for c in r["categories"]]
-
-        # cek apakah ada irisan
-        if set(lower_cats) & set(rest_cats_lower):
-            # urutkan kategori supaya yang cocok muncul di depan
-            r["categories"] = sorted(
-                r["categories"],
-                key=lambda c: (c.lower() not in lower_cats)
-            )
-            filtered_restaurants.append(r)
-
-    return filtered_restaurants
+    return {
+        "total_items": total_items,
+        "total_pages": (total_items + per_page - 1) // per_page,
+        "current_page": page,
+        "per_page": per_page,
+        "restaurants": paginated_restaurants
+    }
     
 
 def get_restaurant_by_id(restaurant_id):

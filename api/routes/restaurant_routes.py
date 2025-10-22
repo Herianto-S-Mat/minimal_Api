@@ -24,20 +24,33 @@ restaurant_model = restaurant_ns.model('Restaurant', {
     'reviews': fields.List(fields.Nested(review_model), description='List of reviews for the restaurant')
 })
 
+# Define a model for the paginated response
+paginated_restaurant_model = restaurant_ns.model('PaginatedRestaurantList', {
+    'total_items': fields.Integer(description='Total number of restaurants matching the criteria'),
+    'total_pages': fields.Integer(description='Total number of pages'),
+    'current_page': fields.Integer(description='Current page number'),
+    'per_page': fields.Integer(description='Number of items per page'),
+    'restaurants': fields.List(fields.Nested(restaurant_model), description='List of restaurants for the current page')
+})
+
 # Parser for query parameters
 restaurant_list_parser = reqparse.RequestParser()
-restaurant_list_parser.add_argument('category', type=str, help='Filter restaurants by category', location='args', action='append')
+restaurant_list_parser.add_argument('category', type=str, help='Filter restaurants by category', location='args')
+restaurant_list_parser.add_argument('page', type=int, help='Page number', location='args', default=1)
+restaurant_list_parser.add_argument('per_page', type=int, help='Items per page', location='args', default=10)
 
 @restaurant_ns.route('/')
 class RestaurantList(Resource):
     @restaurant_ns.doc('list_restaurants')
     @restaurant_ns.expect(restaurant_list_parser)
-    @restaurant_ns.marshal_list_with(restaurant_model)
+    @restaurant_ns.marshal_with(paginated_restaurant_model) # Use marshal_with for the paginated model
     def get(self):
-        """List all restaurants, optionally filtered by category"""
+        """List all restaurants, optionally filtered by category, with pagination"""
         args = restaurant_list_parser.parse_args()
         category = args.get('category')
-        return get_all_restaurants(category)
+        page = args.get('page', 1)
+        per_page = args.get('per_page', 10)
+        return get_all_restaurants(category, page, per_page)
 
 @restaurant_ns.route('/<string:restaurant_id>')
 @restaurant_ns.param('restaurant_id', 'The restaurant identifier')
