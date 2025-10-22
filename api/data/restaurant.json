@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Delicious Bites",
+    "photos": [
+      "https://example.com/restaurant1_photo1.jpg",
+      "https://example.com/restaurant1_photo2.jpg"
+    ],
+    "categories": ["Italian", "Pizza"],
+    "rating": 4.5,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "123 Main St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://example.com/user1.jpg",
+        "user_name": "Alice",
+        "rating": 5,
+        "text": "Amazing pizza and great service!"
+      },
+      {
+        "user_image": "https://example.com/user2.jpg",
+        "user_name": "Bob",
+        "rating": 4,
+        "text": "Good food, a bit pricey."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Spicy Noodle House",
+    "photos": [
+      "https://example.com/restaurant2_photo1.jpg",
+      "https://example.com/restaurant2_photo2.jpg"
+    ],
+    "categories": ["Asian", "Thai"],
+    "rating": 4.0,
+    "price_range": "$",
+    "is_open": false,
+    "address": "456 Oak Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://example.com/user3.jpg",
+        "user_name": "Charlie",
+        "rating": 4,
+        "text": "Authentic Thai food, very spicy!"
+      }
+    ]
+  }
+]
