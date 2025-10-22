@@ -3,8 +3,8 @@
     "id": "1",
     "name": "Delicious Bites",
     "photos": [
-      "https://example.com/restaurant1_photo1.jpg",
-      "https://example.com/restaurant1_photo2.jpg"
+      "https://picsum.photos/seed/1-0/200/300",
+      "https://picsum.photos/seed/1-1/200/300"
     ],
     "categories": ["Italian", "Pizza"],
     "rating": 4.5,
@@ -13,13 +13,13 @@
     "address": "123 Main St, Anytown",
     "reviews": [
       {
-        "user_image": "https://example.com/user1.jpg",
+        "user_image": "https://picsum.photos/seed/alice/50/50",
         "user_name": "Alice",
         "rating": 5,
         "text": "Amazing pizza and great service!"
       },
       {
-        "user_image": "https://example.com/user2.jpg",
+        "user_image": "https://picsum.photos/seed/bob/50/50",
         "user_name": "Bob",
         "rating": 4,
         "text": "Good food, a bit pricey."
@@ -30,8 +30,8 @@
     "id": "2",
     "name": "Spicy Noodle House",
     "photos": [
-      "https://example.com/restaurant2_photo1.jpg",
-      "https://example.com/restaurant2_photo2.jpg"
+      "https://picsum.photos/seed/2-0/200/300",
+      "https://picsum.photos/seed/2-1/200/300"
     ],
     "categories": ["Asian", "Thai"],
     "rating": 4.0,
@@ -40,10 +40,1066 @@
     "address": "456 Oak Ave, Anytown",
     "reviews": [
       {
-        "user_image": "https://example.com/user3.jpg",
+        "user_image": "https://picsum.photos/seed/charlie/50/50",
         "user_name": "Charlie",
         "rating": 4,
         "text": "Authentic Thai food, very spicy!"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Cozy Corner Cafe",
+    "photos": [
+      "https://picsum.photos/seed/3-0/200/300",
+      "https://picsum.photos/seed/3-1/200/300"
+    ],
+    "categories": ["Cafe", "Dessert"],
+    "rating": 4.2,
+    "price_range": "$",
+    "is_open": true,
+    "address": "789 Pine St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/diana/50/50",
+        "user_name": "Diana",
+        "rating": 5,
+        "text": "Perfect spot for coffee and pastries!"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Modern Bistro Grill",
+    "photos": [
+      "https://picsum.photos/seed/4-0/200/300",
+      "https://picsum.photos/seed/4-1/200/300"
+    ],
+    "categories": ["French", "Grill"],
+    "rating": 4.7,
+    "price_range": "$$$",
+    "is_open": true,
+    "address": "101 Elm St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/eve/50/50",
+        "user_name": "Eve",
+        "rating": 5,
+        "text": "Elegant atmosphere and delicious steaks."
+      },
+      {
+        "user_image": "https://picsum.photos/seed/frank/50/50",
+        "user_name": "Frank",
+        "rating": 4,
+        "text": "Great food, but a bit noisy."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Royal Indian Curry",
+    "photos": [
+      "https://picsum.photos/seed/5-0/200/300",
+      "https://picsum.photos/seed/5-1/200/300"
+    ],
+    "categories": ["Indian", "Curry"],
+    "rating": 4.3,
+    "price_range": "$$",
+    "is_open": false,
+    "address": "202 Maple Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/grace/50/50",
+        "user_name": "Grace",
+        "rating": 4,
+        "text": "Authentic flavors, good service."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Happy Sushi Spot",
+    "photos": [
+      "https://picsum.photos/seed/6-0/200/300",
+      "https://picsum.photos/seed/6-1/200/300"
+    ],
+    "categories": ["Japanese", "Sushi"],
+    "rating": 4.6,
+    "price_range": "$$$",
+    "is_open": true,
+    "address": "303 Birch Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/harry/50/50",
+        "user_name": "Harry",
+        "rating": 5,
+        "text": "Fresh sushi and friendly staff!"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Sunny Mexican Taqueria",
+    "photos": [
+      "https://picsum.photos/seed/7-0/200/300",
+      "https://picsum.photos/seed/7-1/200/300"
+    ],
+    "categories": ["Mexican", "Tacos"],
+    "rating": 4.1,
+    "price_range": "$",
+    "is_open": true,
+    "address": "404 Cedar Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/ivy/50/50",
+        "user_name": "Ivy",
+        "rating": 4,
+        "text": "Great tacos, very casual."
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Green Vegan Garden",
+    "photos": [
+      "https://picsum.photos/seed/8-0/200/300",
+      "https://picsum.photos/seed/8-1/200/300"
+    ],
+    "categories": ["Vegan", "Healthy"],
+    "rating": 4.8,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "505 Spruce Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/jack/50/50",
+        "user_name": "Jack",
+        "rating": 5,
+        "text": "Best vegan food in town!"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Urban Seafood Shack",
+    "photos": [
+      "https://picsum.photos/seed/9-0/200/300",
+      "https://picsum.photos/seed/9-1/200/300"
+    ],
+    "categories": ["Seafood", "American"],
+    "rating": 4.4,
+    "price_range": "$$$",
+    "is_open": false,
+    "address": "606 Willow St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/alice/50/50",
+        "user_name": "Alice",
+        "rating": 4,
+        "text": "Fresh seafood, but a bit slow."
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Classic American Diner",
+    "photos": [
+      "https://picsum.photos/seed/10-0/200/300",
+      "https://picsum.photos/seed/10-1/200/300"
+    ],
+    "categories": ["American", "Fast Food"],
+    "rating": 3.9,
+    "price_range": "$",
+    "is_open": true,
+    "address": "707 Poplar Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/bob/50/50",
+        "user_name": "Bob",
+        "rating": 4,
+        "text": "Good old-fashioned burgers."
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "The Great Pizzeria",
+    "photos": [
+      "https://picsum.photos/seed/11-0/200/300",
+      "https://picsum.photos/seed/11-1/200/300"
+    ],
+    "categories": ["Italian", "Pizza"],
+    "rating": 4.5,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "808 Oakwood Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/charlie/50/50",
+        "user_name": "Charlie",
+        "rating": 5,
+        "text": "Best pizza in town, hands down!"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Asian Wok House",
+    "photos": [
+      "https://picsum.photos/seed/12-0/200/300",
+      "https://picsum.photos/seed/12-1/200/300"
+    ],
+    "categories": ["Asian", "Chinese"],
+    "rating": 4.0,
+    "price_range": "$",
+    "is_open": true,
+    "address": "909 Cherry Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/diana/50/50",
+        "user_name": "Diana",
+        "rating": 4,
+        "text": "Quick and tasty stir-fries."
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Thai Spice Kitchen",
+    "photos": [
+      "https://picsum.photos/seed/13-0/200/300",
+      "https://picsum.photos/seed/13-1/200/300"
+    ],
+    "categories": ["Thai", "Spicy"],
+    "rating": 4.3,
+    "price_range": "$$",
+    "is_open": false,
+    "address": "111 Peach St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/eve/50/50",
+        "user_name": "Eve",
+        "rating": 4,
+        "text": "Very spicy, just how I like it!"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Indian Palace Bistro",
+    "photos": [
+      "https://picsum.photos/seed/14-0/200/300",
+      "https://picsum.photos/seed/14-1/200/300"
+    ],
+    "categories": ["Indian", "Fine Dining"],
+    "rating": 4.7,
+    "price_range": "$$$$",
+    "is_open": true,
+    "address": "222 Plum Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/frank/50/50",
+        "user_name": "Frank",
+        "rating": 5,
+        "text": "Luxurious experience, exquisite food."
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Mexican Fiesta Grill",
+    "photos": [
+      "https://picsum.photos/seed/15-0/200/300",
+      "https://picsum.photos/seed/15-1/200/300"
+    ],
+    "categories": ["Mexican", "Grill"],
+    "rating": 4.2,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "333 Apricot Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/grace/50/50",
+        "user_name": "Grace",
+        "rating": 4,
+        "text": "Lively atmosphere and tasty fajitas."
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "American Burger Joint",
+    "photos": [
+      "https://picsum.photos/seed/16-0/200/300",
+      "https://picsum.photos/seed/16-1/200/300"
+    ],
+    "categories": ["American", "Burgers"],
+    "rating": 4.0,
+    "price_range": "$",
+    "is_open": true,
+    "address": "444 Lemon Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/harry/50/50",
+        "user_name": "Harry",
+        "rating": 4,
+        "text": "Classic burgers and fries."
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "French Elegance Restaurant",
+    "photos": [
+      "https://picsum.photos/seed/17-0/200/300",
+      "https://picsum.photos/seed/17-1/200/300"
+    ],
+    "categories": ["French", "Fine Dining"],
+    "rating": 4.9,
+    "price_range": "$$$$",
+    "is_open": true,
+    "address": "555 Lime St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/ivy/50/50",
+        "user_name": "Ivy",
+        "rating": 5,
+        "text": "Unforgettable dining experience."
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Japanese Ramen Bar",
+    "photos": [
+      "https://picsum.photos/seed/18-0/200/300",
+      "https://picsum.photos/seed/18-1/200/300"
+    ],
+    "categories": ["Japanese", "Ramen"],
+    "rating": 4.4,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "666 Orange Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/jack/50/50",
+        "user_name": "Jack",
+        "rating": 4,
+        "text": "Hearty ramen, perfect for a cold day."
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Chinese Dim Sum Palace",
+    "photos": [
+      "https://picsum.photos/seed/19-0/200/300",
+      "https://picsum.photos/seed/19-1/200/300"
+    ],
+    "categories": ["Chinese", "Dim Sum"],
+    "rating": 4.1,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "777 Grape Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/alice/50/50",
+        "user_name": "Alice",
+        "rating": 4,
+        "text": "Great variety of dim sum."
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Mediterranean Mezze House",
+    "photos": [
+      "https://picsum.photos/seed/20-0/200/300",
+      "https://picsum.photos/seed/20-1/200/300"
+    ],
+    "categories": ["Mediterranean", "Middle Eastern"],
+    "rating": 4.6,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "888 Berry Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/bob/50/50",
+        "user_name": "Bob",
+        "rating": 5,
+        "text": "Fresh and flavorful dishes."
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Vegan Delight Bistro",
+    "photos": [
+      "https://picsum.photos/seed/21-0/200/300",
+      "https://picsum.photos/seed/21-1/200/300"
+    ],
+    "categories": ["Vegan", "Organic"],
+    "rating": 4.8,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "999 Kiwi St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/charlie/50/50",
+        "user_name": "Charlie",
+        "rating": 5,
+        "text": "Creative and delicious vegan options."
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "Seafood Lovers Paradise",
+    "photos": [
+      "https://picsum.photos/seed/22-0/200/300",
+      "https://picsum.photos/seed/22-1/200/300"
+    ],
+    "categories": ["Seafood", "Grill"],
+    "rating": 4.5,
+    "price_range": "$$$",
+    "is_open": true,
+    "address": "123 Mango Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/diana/50/50",
+        "user_name": "Diana",
+        "rating": 5,
+        "text": "Amazing fresh seafood!"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "Fast Burger Express",
+    "photos": [
+      "https://picsum.photos/seed/23-0/200/300",
+      "https://picsum.photos/seed/23-1/200/300"
+    ],
+    "categories": ["Fast Food", "Burgers"],
+    "rating": 3.8,
+    "price_range": "$",
+    "is_open": true,
+    "address": "456 Papaya Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/eve/50/50",
+        "user_name": "Eve",
+        "rating": 3,
+        "text": "Quick and cheap, but nothing special."
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "name": "The Dessert Haven",
+    "photos": [
+      "https://picsum.photos/seed/24-0/200/300",
+      "https://picsum.photos/seed/24-1/200/300"
+    ],
+    "categories": ["Dessert", "Cafe"],
+    "rating": 4.7,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "789 Guava Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/frank/50/50",
+        "user_name": "Frank",
+        "rating": 5,
+        "text": "Heaven for anyone with a sweet tooth!"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Italian Trattoria",
+    "photos": [
+      "https://picsum.photos/seed/25-0/200/300",
+      "https://picsum.photos/seed/25-1/200/300"
+    ],
+    "categories": ["Italian", "Pasta"],
+    "rating": 4.3,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "101 Fig St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/grace/50/50",
+        "user_name": "Grace",
+        "rating": 4,
+        "text": "Authentic Italian pasta dishes."
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "Asian Fusion Wok",
+    "photos": [
+      "https://picsum.photos/seed/26-0/200/300",
+      "https://picsum.photos/seed/26-1/200/300"
+    ],
+    "categories": ["Asian", "Fusion"],
+    "rating": 4.1,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "202 Date Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/harry/50/50",
+        "user_name": "Harry",
+        "rating": 4,
+        "text": "Interesting blend of Asian flavors."
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "Thai Street Food",
+    "photos": [
+      "https://picsum.photos/seed/27-0/200/300",
+      "https://picsum.photos/seed/27-1/200/300"
+    ],
+    "categories": ["Thai", "Street Food"],
+    "rating": 4.0,
+    "price_range": "$",
+    "is_open": true,
+    "address": "303 Elderberry Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/ivy/50/50",
+        "user_name": "Ivy",
+        "rating": 4,
+        "text": "Delicious and affordable Thai food."
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Indian Tandoori House",
+    "photos": [
+      "https://picsum.photos/seed/28-0/200/300",
+      "https://picsum.photos/seed/28-1/200/300"
+    ],
+    "categories": ["Indian", "Tandoori"],
+    "rating": 4.4,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "444 Fig Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/jack/50/50",
+        "user_name": "Jack",
+        "rating": 4,
+        "text": "Great tandoori dishes."
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "Mexican Cantina",
+    "photos": [
+      "https://picsum.photos/seed/29-0/200/300",
+      "https://picsum.photos/seed/29-1/200/300"
+    ],
+    "categories": ["Mexican", "Drinks"],
+    "rating": 4.2,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "555 Grapefruit St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/alice/50/50",
+        "user_name": "Alice",
+        "rating": 4,
+        "text": "Good margaritas and tacos."
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "American Steakhouse",
+    "photos": [
+      "https://picsum.photos/seed/30-0/200/300",
+      "https://picsum.photos/seed/30-1/200/300"
+    ],
+    "categories": ["American", "Steak"],
+    "rating": 4.7,
+    "price_range": "$$$$",
+    "is_open": true,
+    "address": "666 Honeydew Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/bob/50/50",
+        "user_name": "Bob",
+        "rating": 5,
+        "text": "Excellent steaks, worth the price."
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "name": "French Patisserie",
+    "photos": [
+      "https://picsum.photos/seed/31-0/200/300",
+      "https://picsum.photos/seed/31-1/200/300"
+    ],
+    "categories": ["French", "Dessert"],
+    "rating": 4.8,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "777 Cantaloupe Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/charlie/50/50",
+        "user_name": "Charlie",
+        "rating": 5,
+        "text": "Beautiful and delicious pastries."
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Japanese Izakaya",
+    "photos": [
+      "https://picsum.photos/seed/32-0/200/300",
+      "https://picsum.photos/seed/32-1/200/300"
+    ],
+    "categories": ["Japanese", "Small Plates"],
+    "rating": 4.5,
+    "price_range": "$$$",
+    "is_open": true,
+    "address": "888 Watermelon Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/diana/50/50",
+        "user_name": "Diana",
+        "rating": 5,
+        "text": "Great place for drinks and small bites."
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "name": "Chinese Noodle Shop",
+    "photos": [
+      "https://picsum.photos/seed/33-0/200/300",
+      "https://picsum.photos/seed/33-1/200/300"
+    ],
+    "categories": ["Chinese", "Noodles"],
+    "rating": 4.0,
+    "price_range": "$",
+    "is_open": true,
+    "address": "999 Pomegranate St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/eve/50/50",
+        "user_name": "Eve",
+        "rating": 4,
+        "text": "Authentic hand-pulled noodles."
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "name": "Mediterranean Grill House",
+    "photos": [
+      "https://picsum.photos/seed/34-0/200/300",
+      "https://picsum.photos/seed/34-1/200/300"
+    ],
+    "categories": ["Mediterranean", "Grill"],
+    "rating": 4.6,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "123 Dragonfruit Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/frank/50/50",
+        "user_name": "Frank",
+        "rating": 5,
+        "text": "Healthy and delicious grilled meats."
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "name": "Vegan Burger Bar",
+    "photos": [
+      "https://picsum.photos/seed/35-0/200/300",
+      "https://picsum.photos/seed/35-1/200/300"
+    ],
+    "categories": ["Vegan", "Burgers"],
+    "rating": 4.3,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "456 Lychee Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/grace/50/50",
+        "user_name": "Grace",
+        "rating": 4,
+        "text": "Surprisingly good vegan burgers."
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Seafood Boil & Bar",
+    "photos": [
+      "https://picsum.photos/seed/36-0/200/300",
+      "https://picsum.photos/seed/36-1/200/300"
+    ],
+    "categories": ["Seafood", "Cajun"],
+    "rating": 4.4,
+    "price_range": "$$$",
+    "is_open": true,
+    "address": "789 Rambutan Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/harry/50/50",
+        "user_name": "Harry",
+        "rating": 4,
+        "text": "Messy but delicious seafood boil."
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "name": "Fast Pizza Slice",
+    "photos": [
+      "https://picsum.photos/seed/37-0/200/300",
+      "https://picsum.photos/seed/37-1/200/300"
+    ],
+    "categories": ["Fast Food", "Pizza"],
+    "rating": 3.7,
+    "price_range": "$",
+    "is_open": true,
+    "address": "101 Durian St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/ivy/50/50",
+        "user_name": "Ivy",
+        "rating": 3,
+        "text": "Quick slice, nothing fancy."
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "name": "The Sweet Spot Bakery",
+    "photos": [
+      "https://picsum.photos/seed/38-0/200/300",
+      "https://picsum.photos/seed/38-1/200/300"
+    ],
+    "categories": ["Dessert", "Bakery"],
+    "rating": 4.9,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "202 Jackfruit Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/jack/50/50",
+        "user_name": "Jack",
+        "rating": 5,
+        "text": "Amazing cakes and pastries!"
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Italian Gelato Bar",
+    "photos": [
+      "https://picsum.photos/seed/39-0/200/300",
+      "https://picsum.photos/seed/39-1/200/300"
+    ],
+    "categories": ["Italian", "Dessert"],
+    "rating": 4.6,
+    "price_range": "$",
+    "is_open": true,
+    "address": "303 Longan Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/alice/50/50",
+        "user_name": "Alice",
+        "rating": 5,
+        "text": "Delicious authentic gelato."
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "name": "Asian Bubble Tea",
+    "photos": [
+      "https://picsum.photos/seed/40-0/200/300",
+      "https://picsum.photos/seed/40-1/200/300"
+    ],
+    "categories": ["Asian", "Cafe"],
+    "rating": 4.2,
+    "price_range": "$",
+    "is_open": true,
+    "address": "444 Mangosteen Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/bob/50/50",
+        "user_name": "Bob",
+        "rating": 4,
+        "text": "Great selection of bubble tea."
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "name": "Thai Noodle Express",
+    "photos": [
+      "https://picsum.photos/seed/41-0/200/300",
+      "https://picsum.photos/seed/41-1/200/300"
+    ],
+    "categories": ["Thai", "Noodles"],
+    "rating": 4.0,
+    "price_range": "$",
+    "is_open": true,
+    "address": "555 Persimmon St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/charlie/50/50",
+        "user_name": "Charlie",
+        "rating": 4,
+        "text": "Quick and satisfying noodle dishes."
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "name": "Indian Street Eats",
+    "photos": [
+      "https://picsum.photos/seed/42-0/200/300",
+      "https://picsum.photos/seed/42-1/200/300"
+    ],
+    "categories": ["Indian", "Street Food"],
+    "rating": 4.3,
+    "price_range": "$",
+    "is_open": true,
+    "address": "666 Starfruit Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/diana/50/50",
+        "user_name": "Diana",
+        "rating": 4,
+        "text": "Tasty and authentic Indian street food."
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "name": "Mexican Burrito Bar",
+    "photos": [
+      "https://picsum.photos/seed/43-0/200/300",
+      "https://picsum.photos/seed/43-1/200/300"
+    ],
+    "categories": ["Mexican", "Burritos"],
+    "rating": 4.1,
+    "price_range": "$",
+    "is_open": true,
+    "address": "777 Tamarind Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/eve/50/50",
+        "user_name": "Eve",
+        "rating": 4,
+        "text": "Customizable burritos, always fresh."
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "name": "American BBQ Smokehouse",
+    "photos": [
+      "https://picsum.photos/seed/44-0/200/300",
+      "https://picsum.photos/seed/44-1/200/300"
+    ],
+    "categories": ["American", "BBQ"],
+    "rating": 4.7,
+    "price_range": "$$$",
+    "is_open": true,
+    "address": "888 Ugli Fruit Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/frank/50/50",
+        "user_name": "Frank",
+        "rating": 5,
+        "text": "Tender ribs and smoky flavors."
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "name": "French Creperie",
+    "photos": [
+      "https://picsum.photos/seed/45-0/200/300",
+      "https://picsum.photos/seed/45-1/200/300"
+    ],
+    "categories": ["French", "Crepes"],
+    "rating": 4.5,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "999 Vanilla Bean St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/grace/50/50",
+        "user_name": "Grace",
+        "rating": 5,
+        "text": "Sweet and savory crepes, just like in Paris."
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "name": "Japanese Sushi & Sashimi",
+    "photos": [
+      "https://picsum.photos/seed/46-0/200/300",
+      "https://picsum.photos/seed/46-1/200/300"
+    ],
+    "categories": ["Japanese", "Sushi"],
+    "rating": 4.8,
+    "price_range": "$$$$",
+    "is_open": true,
+    "address": "123 Wasabi Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/harry/50/50",
+        "user_name": "Harry",
+        "rating": 5,
+        "text": "Exquisite sushi, very fresh."
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "name": "Chinese Hot Pot",
+    "photos": [
+      "https://picsum.photos/seed/47-0/200/300",
+      "https://picsum.photos/seed/47-1/200/300"
+    ],
+    "categories": ["Chinese", "Hot Pot"],
+    "rating": 4.4,
+    "price_range": "$$$",
+    "is_open": true,
+    "address": "456 Xylocarp Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/ivy/50/50",
+        "user_name": "Ivy",
+        "rating": 4,
+        "text": "Fun and delicious hot pot experience."
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "Mediterranean Kebab House",
+    "photos": [
+      "https://picsum.photos/seed/48-0/200/300",
+      "https://picsum.photos/seed/48-1/200/300"
+    ],
+    "categories": ["Mediterranean", "Kebab"],
+    "rating": 4.2,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "789 Yam St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/jack/50/50",
+        "user_name": "Jack",
+        "rating": 4,
+        "text": "Great kebabs and fresh salads."
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "Vegan Pizza Place",
+    "photos": [
+      "https://picsum.photos/seed/49-0/200/300",
+      "https://picsum.photos/seed/49-1/200/300"
+    ],
+    "categories": ["Vegan", "Pizza"],
+    "rating": 4.0,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "101 Zucchini Ave, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/alice/50/50",
+        "user_name": "Alice",
+        "rating": 4,
+        "text": "Surprisingly good vegan pizza."
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "name": "Seafood Gumbo Kitchen",
+    "photos": [
+      "https://picsum.photos/seed/50-0/200/300",
+      "https://picsum.photos/seed/50-1/200/300"
+    ],
+    "categories": ["Seafood", "Cajun"],
+    "rating": 4.3,
+    "price_range": "$$$",
+    "is_open": true,
+    "address": "202 Artichoke Ln, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/bob/50/50",
+        "user_name": "Bob",
+        "rating": 4,
+        "text": "Hearty gumbo, full of flavor."
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "name": "Fast Food Chicken",
+    "photos": [
+      "https://picsum.photos/seed/51-0/200/300",
+      "https://picsum.photos/seed/51-1/200/300"
+    ],
+    "categories": ["Fast Food", "Chicken"],
+    "rating": 3.9,
+    "price_range": "$",
+    "is_open": true,
+    "address": "303 Broccoli Rd, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/charlie/50/50",
+        "user_name": "Charlie",
+        "rating": 4,
+        "text": "Crispy chicken, quick service."
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "name": "The Cake Boutique",
+    "photos": [
+      "https://picsum.photos/seed/52-0/200/300",
+      "https://picsum.photos/seed/52-1/200/300"
+    ],
+    "categories": ["Dessert", "Cakes"],
+    "rating": 4.9,
+    "price_range": "$$",
+    "is_open": true,
+    "address": "444 Cabbage St, Anytown",
+    "reviews": [
+      {
+        "user_image": "https://picsum.photos/seed/diana/50/50",
+        "user_name": "Diana",
+        "rating": 5,
+        "text": "Beautiful and delicious custom cakes."
       }
     ]
   }
