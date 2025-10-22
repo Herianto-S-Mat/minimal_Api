@@ -1,10 +1,12 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 from flask_restx import Api
 from api.routes.category_routes import category_ns
 from api.routes.restaurant_routes import restaurant_ns
 
 
 app = Flask(__name__)
+CORS(app)
 api = Api(
     app,
     version='1.0',
